@@ -22,7 +22,7 @@ const LocationSearchInput = () => {
         <div>
             <AsyncTypeahead
                 filterBy={() => true}
-                className='col-12 col-sm-8 col-lg-5 m-auto'
+                className='col-12'
                 id="location_search"
                 isLoading={isLoading}
                 labelKey="label"

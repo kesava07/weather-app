@@ -1,14 +1,13 @@
-import LocationSearchInput from "./components/LocationSearchInput"
-import Heading from "./components/Heading";
 import Weather from "./components/Weather";
+import LeftContainer from "./components/LeftContainer";
+import AppContainer from "./components/AppContainer";
 
 const App = () => {
   return (
-    <div className="container my-4">
-      <Heading title="Weather App" />
-      <LocationSearchInput />
+    <AppContainer>
+      <LeftContainer />
       <Weather />
-    </div>
+    </AppContainer>
   )
 }
 
