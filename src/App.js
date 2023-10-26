@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import LocationSearchInput from "./components/LocationSearchInput"
+import Heading from "./components/Heading";
+import Weather from "./components/Weather";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container my-4">
+      <Heading title="Weather App" />
+      <LocationSearchInput />
+      <Weather />
     </div>
-  );
+  )
 }
 
 export default App;
